@@ -1,12 +1,10 @@
 require('pry')
 require('rspec')
 require('riddle')
+tri = Riddle.new(tri.question,"needle")
 
-# describe Triangles do
-describe ("#checker") do
-
-  it("Determine if this is a triangle") do
-  tri = Riddle.new(@question,@answer)
-  expect(tri.checker).to(eq(true))
+describe ("#picker") do
+  it("test if answer is correct") do
+  expect(tri.question).to(eq(["needle","meet"]))
   end
 end

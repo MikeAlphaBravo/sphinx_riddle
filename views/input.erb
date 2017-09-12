@@ -4,8 +4,12 @@
 
 <form action="output" method="post">
   <div class="form-group">
-    <label for="user_answer"><%= @question %></label>
-    <input id="user_answer" name="user_answer" class="form-control" type="string">
+    <label for="user_answer1"><%= @question[0] %></label>
+    <input id="user_answer1" name="user_answer1" class="form-control" type="string">
+  </div>
+  <div class="form-group">
+    <label for="user_answer2"><%= @question[1] %></label>
+    <input id="user_answer2" name="user_answer2" class="form-control" type="string">
   </div>
 
   <button type="submit" class="btn">Ask the Sphinx</button>
