@@ -1,0 +1,12 @@
+
+<h1>Welcome to the Sphinx Word Game</h1>
+<h3>Chances Remaining: <%= @errors %></h3>
+
+<form action="output" method="post">
+  <div class="form-group">
+    <label for="user_answer"><%= @question %></label>
+    <input id="user_answer" name="user_answer" class="form-control" type="string">
+  </div>
+
+  <button type="submit" class="btn">Ask the Sphinx</button>
+</form>
